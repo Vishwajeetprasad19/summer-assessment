@@ -1,0 +1,22 @@
+// to find x^n  without pow()
+
+#include <stdio.h>
+
+int main() {
+    int x, n, i;
+    long long result = 1;
+
+    printf("enter x : ");
+    scanf("%d", &x);
+     
+     printf("enter n : ");
+     scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        result *= x;
+    }
+
+    printf("%lld", result);
+
+    return 0;
+}
